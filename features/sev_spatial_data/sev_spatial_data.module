@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the SEV Spatial Data feature.
+ */
+
+include_once 'sev_spatial_data.features.inc';

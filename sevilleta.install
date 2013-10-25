@@ -15,4 +15,29 @@ function sevilleta_install() {
 
   );
   taxonomy_vocabulary_save($vocabulary);
+
+   // Create the downloads vocabulary.
+    $description = st('Use tags to group documents on similar topics into categories.');
+    $help = st('Enter a comma-separated list of words to describe your content.');
+    $vocabulary = (object) array(
+      'name' => st('Downloads'),
+      'description' => $description,
+      'machine_name' => 'downloads',
+      'help' => $help,
+
+    );
+    taxonomy_vocabulary_save($vocabulary);
+
+  //  Create the Spatial Data vocabulary.
+    $description = st('Use tags to group spatial data on similar topics into categories.');
+    $help = st('Enter a comma-separated list of words to describe your content.');
+    $vocabulary = (object) array(
+      'name' => st('Spatial Data'),
+      'description' => $description,
+      'machine_name' => 'spatial_data',
+      'help' => $help,
+  
+    );
+    taxonomy_vocabulary_save($vocabulary);
+
 }
